@@ -1,0 +1,52 @@
+<div class="container-fluid no-padding">
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <a class="navbar-brand" href="#">
+            <%= image_tag "index/logo-fixsell-grande.svg", size:"250x100", alt:"logo" %>
+        </a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav">
+            <li class="nav-item pl-5">
+              <a class="nav-link" href="#">Servicios de Impresión</a>
+            </li>
+            <li class="nav-item pl-5">
+                <a class="nav-link" href="#">Tienda en Linea</a>
+            </li>
+            <li class="nav-item pl-5">
+                <a class="nav-link" href="#">Acerca de Nosotros</a>
+            </li>
+            <li class="nav-item pl-5">
+                <a class="nav-link" href="#">Contacto</a>
+            </li>
+          </ul>
+        </div>
+    </nav>
+    <div class="home-banner">
+        <div class="llamada-accion">
+            <h1 class="titulo">Control, seguridad y ahorro.</h1>
+            <h2 class="sub-titulo">Encuentra las mejores copiadoras
+            multifuncionales en el mercado que
+            cumplan con tus necesidades.</h2>
+        </div>
+        
+        <!-- <%= image_tag "index/toner.jpg", class: "main-img-banner" %> -->
+        <%= video_tag "konica.mp4", :autoplay => true, :loop => true, :muted => true, class: "video-home" %>
+    </div>
+    <div class="row categorias">
+        <div class="col-3 cat">
+            <%= image_tag "index/toner.jpg" %>
+        </div>
+        <div class="col-3 cat hvr-bounce-to-bottom">
+            <%= image_tag "index/tienda-en-linea.jpg" %>
+        </div>
+        <div class="col-3 cat">
+            <%= image_tag "index/servicios-impresion.jpg" %>
+        </div>
+        <div class="col-3 cat">
+            <%= image_tag "index/promociones.jpg" %>
+        </div>
+    </div>
+        
+</div>

@@ -1,0 +1,116 @@
+// Place all the styles related to the home controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: https://sass-lang.com/
+
+.no-padding {
+    padding: 0 !important;
+    margin: 0 !important;
+}
+
+.full {
+    width: 100%;
+    height: auto;
+}
+
+.home-banner {
+    position: relative;
+    width: 100%;
+    height: 500px;
+    .llamada-accion {
+        position: absolute;
+        top: 40%;
+        left: 0%;
+        background-color:#fff;
+        padding-top: 2vh;
+        padding-bottom: 2vh;
+        padding-left: 1vw;
+        padding-right: 1vw;
+        .titulo {
+           
+            font-size: 4rem;
+           
+        }
+    
+        .sub-titulo {
+            color: gray;
+            font-size: 1.5rem;
+            font-weight: 400;
+        }
+    }
+    
+    .boton-accion {
+        position: absolute;
+        top: 50%;
+        left: 45%;
+    }
+
+    .video-home {
+        width: 100%;
+        max-height: 100%;
+        object-fit: cover;
+    }
+    // .main-img-banner {
+    //     width: 100%;
+    //     max-height: 100%;
+    //     object-fit: cover;
+    // }
+}
+
+.nav-link {
+    color: black !important;
+}
+
+.categorias {
+    padding-top: 1vh;
+    .cat {
+        width: 100%;
+        height: 300px;
+        img {
+            width: 100%;
+            max-height: 100%;
+            object-fit: cover;
+        }
+    }
+}
+
+.hvr-bounce-to-bottom {
+    display: inline-block;
+    vertical-align: middle;
+    -webkit-transform: perspective(1px) translateZ(0);
+    transform: perspective(1px) translateZ(0);
+    box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+    position: relative;
+    -webkit-transition-property: color;
+    transition-property: color;
+    -webkit-transition-duration: 0.5s;
+    transition-duration: 0.5s;
+  }
+  .hvr-bounce-to-bottom:before {
+    content: "";
+    position: absolute;
+    z-index: -1;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: #2098D1;
+    -webkit-transform: scaleY(0);
+    transform: scaleY(0);
+    -webkit-transform-origin: 50% 0;
+    transform-origin: 50% 0;
+    -webkit-transition-property: transform;
+    transition-property: transform;
+    -webkit-transition-duration: 0.5s;
+    transition-duration: 0.5s;
+    -webkit-transition-timing-function: ease-out;
+    transition-timing-function: ease-out;
+  }
+  .hvr-bounce-to-bottom:hover, .hvr-bounce-to-bottom:focus, .hvr-bounce-to-bottom:active {
+    color: white;
+  }
+  .hvr-bounce-to-bottom:hover:before, .hvr-bounce-to-bottom:focus:before, .hvr-bounce-to-bottom:active:before {
+    -webkit-transform: scaleY(1);
+    transform: scaleY(1);
+    -webkit-transition-timing-function: cubic-bezier(0.52, 1.64, 0.37, 0.66);
+    transition-timing-function: cubic-bezier(0.52, 1.64, 0.37, 0.66);
+  }
