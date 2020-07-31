@@ -29,40 +29,38 @@
             <h2 class="sub-titulo">Empresa dedicada a el mercado de la impresión en el ambito profesional y corporativo.</h2>
         </div>
         
-        <!-- <%= image_tag "index/toner.jpg", class: "main-img-banner" %> -->
+        
         <%= video_tag "konica.mp4", :autoplay => true, :loop => true, :muted => true, class: "video-home" %>
     </div>
     <div class="row categorias">
         <div class="col-3">
-            <div class="cat">
-            <%= image_tag "index/toner.jpg" %>
-            <h3>Consumibles</h3>
+            <div class="card-category hvr-bounce-to-bottom" id="consumibles">
+                Consumibles
             </div>
         </div>
         <div class="col-3">
-            <div class="cat">
-            <%= image_tag "index/tienda-en-linea.jpg" %>
-            <h3>Tienda en Linea </h3> 
+            <div class="card-category hvr-bounce-to-bottom" id="tienda">
+                Tienda en Linea
             </div>
         </div>
         <div class="col-3">
-            <div class="cat">
-            <%= image_tag "index/servicios-impresion.jpg" %>
-            <h3>Servicios de Impresión</h3>
-            </div> 
+            <div class="card-category hvr-bounce-to-bottom" id="servicios">
+                Servicios de Impresión
+            </div>
         </div>
         <div class="col-3">
-            <div class="cat">
-            <%= image_tag "index/promociones.jpg" %>
-            <h3>Promociones</h3>
+            <div class="card-category hvr-buzz" id="promociones">
+                Promociones
             </div>
         </div>
     </div>
-    <div class="row categorias">
-        <div class="col-12">
-            <div class="card-category">
-                Consumibles
-            </div>
+
+    <div class="row presentacion justify-content-end">
+        <div class="col-9 imagen-presentacion">
+            <%= image_tag "index/konica_minolta_c2060.jpg" %>
+        </div>
+        <div class="col-6 texto-presentacion align-self-start">
+            <h1>Contamos con mas de 25 años de experiencia en el mercado de fotocopiado e impresión.</h1>
         </div>
     </div>
         

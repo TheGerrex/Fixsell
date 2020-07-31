@@ -25,6 +25,7 @@
         padding-bottom: 2vh;
         padding-left: 1vw;
         padding-right: 1vw;
+        border-radius:2px;
         .titulo {
            
             font-size: 4rem;
@@ -60,42 +61,30 @@
     color: black !important;
 }
 
+#consumibles {
+    background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)), url("index/toner.jpg");
+}
+#tienda {
+    background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)), url("index/tienda-en-linea.jpg");
+}
+#servicios {
+    background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)), url("index/servicios-impresion.jpg");
+}
+#promociones {
+    background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)), url("index/promociones.jpg");
+}
+
 .categorias {
+
     padding-top: 2vh;
     padding-bottom: 2vh;
     padding-left: 2vw;
     padding-right: 2vw;
-    .cat {
-        width: 100%;
-        height: auto;
-        text-align: center;
-        vertical-align: center;
-        box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
-        transition: all 0.3s cubic-bezier(.25,.8,.25,1);
-        img {
-            // position: absolute;
-            // left: 0;
-            // top: 0;
-            width: 100%;
-            height: 100%;
-            object-fit: cover;
-        }
-        h3 {
-            padding-top: 2vh;
-            padding-bottom: 2vh;
-            padding-left: 2vw;
-            padding-right: 2vw;
-            
-        }
-    }
-    .cat:hover {
-        box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
-      }
 
     .card-category {
     background-size: cover;
     background-position: center;
-    height: 180px;
+    height: 250px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -103,10 +92,13 @@
     font-size: 24px;
     font-weight: bold;
     text-shadow: 1px 1px 3px rgba(0,0,0,0.2);
-    border-radius: 5px;
     box-shadow: 0 0 15px rgba(0,0,0,0.2);
-    background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)), url(/assets/toner.jpg);
+    border-radius: 2px;
     }
+
+    // .card-category:hover {
+    //     box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
+    //   }
 }
 
 .hvr-bounce-to-bottom {
@@ -129,7 +121,7 @@
     left: 0;
     right: 0;
     bottom: 0;
-    background: #2098D1;
+    background: #781F41;
     -webkit-transform: scaleY(0);
     transform: scaleY(0);
     -webkit-transform-origin: 50% 0;
@@ -149,4 +141,65 @@
     transform: scaleY(1);
     -webkit-transition-timing-function: cubic-bezier(0.52, 1.64, 0.37, 0.66);
     transition-timing-function: cubic-bezier(0.52, 1.64, 0.37, 0.66);
+  }
+
+  @-webkit-keyframes hvr-buzz {
+    50% {
+      -webkit-transform: translateX(3px) rotate(2deg);
+      transform: translateX(3px) rotate(2deg);
+    }
+    100% {
+      -webkit-transform: translateX(-3px) rotate(-2deg);
+      transform: translateX(-3px) rotate(-2deg);
+    }
+  }
+  @keyframes hvr-buzz {
+    50% {
+      -webkit-transform: translateX(3px) rotate(2deg);
+      transform: translateX(3px) rotate(2deg);
+    }
+    100% {
+      -webkit-transform: translateX(-3px) rotate(-2deg);
+      transform: translateX(-3px) rotate(-2deg);
+    }
+  }
+  .hvr-buzz {
+    display: inline-block;
+    vertical-align: middle;
+    -webkit-transform: perspective(1px) translateZ(0);
+    transform: perspective(1px) translateZ(0);
+    box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+    color: yellow;
+  }
+  .hvr-buzz:hover, .hvr-buzz:focus, .hvr-buzz:active {
+    -webkit-animation-name: hvr-buzz;
+    animation-name: hvr-buzz;
+    -webkit-animation-duration: 0.15s;
+    animation-duration: 0.15s;
+    -webkit-animation-timing-function: linear;
+    animation-timing-function: linear;
+    -webkit-animation-iteration-count: infinite;
+    animation-iteration-count: infinite;
+  }
+
+  .presentacion {
+      height: 500px;
+      object-fit: contain;
+      position: relative;
+      display: flex;
+      .imagen-presentacion {
+          position: absolute;
+          z-index: 0;
+
+          img {
+            width: 100%;
+            height: auto;
+          }
+      }
+      
+      .texto-presentacion {
+         
+        position: absolute;
+          z-index: 1;
+      }
   }
