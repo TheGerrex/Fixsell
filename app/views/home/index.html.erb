@@ -25,7 +25,7 @@
     </nav>
     <div class="home-banner">
         <div class="llamada-accion">
-            <h1 class="titulo">Control, seguridad y ahorro.</h1>
+            <h1 class="banner-titulo">Control, seguridad y ahorro.</h1>
             <h2 class="sub-titulo">Empresa dedicada a el mercado de la impresión en el ambito profesional y corporativo.</h2>
         </div>
         
@@ -55,13 +55,115 @@
         </div>
     </div>
 
-    <div class="row presentacion justify-content-end">
-        <div class="col-9 imagen-presentacion">
+    <div class="row presentacion">
+        <div class="col-8 imagen-presentacion">
             <%= image_tag "index/konica_minolta_c2060.jpg" %>
+            <div class="product-card">
+                <%= image_tag "index/bizhub-1060-logo.svg" %>
+            </div>
         </div>
-        <div class="col-6 texto-presentacion align-self-start">
-            <h1>Contamos con mas de 25 años de experiencia en el mercado de fotocopiado e impresión.</h1>
+        <div class="col-4 texto-presentacion">
+            <h1><span>29 años de experiencia</span> en el mercado de fotocopiado e impresión.</h1>
+            <hr>
+            <p>Como proveedor de productos lideres relacionados con la información de la imagen, nos consideramos como su socio competente para su negocio.</p>
         </div>
     </div>
+
+    <div class="row titulo-clientes">
+        <div class="col-12">
+            <h4>Confiado por empresas con visión a futuro</h4>
+        </div>
+    </div>
+    <div class="row clientes justify-content-between"> 
+        <%= image_tag "index/lg.svg"%>
+        <%= image_tag "index/logo-risoul.svg"%>
+        <%= image_tag "index/logo-semex.svg", id: "semex"%>
+        <%= image_tag "index/logo-tecmilenio.svg"%>
+        <%= image_tag "index/logo-thomasbetts.svg"%>
+        <%= image_tag "index/logo-vitro.svg"%>           
+    </div>
+    <div class="acerca-de-nosotros">
+        <div class="row titulo">
+            <div class="col-8 titulo-columna">
+                <h1>Acerca de nosotros</h1>
+            </div>
+        </div>
+    
+        <div class="row contenido">
+            <div class="col-4 valores">
+                <div>
+                    <h1>Valores</h1>
+                    <ul>
+                        <li>Responsabilidad</li>
+                        <li>Integridad</li>
+                        <li>Honestidad</li>
+                        <li>Compromiso</li>
+                        <li>Calidad</li>
+                        <li>Profesionalidad</li>
+                        <li>Empatia</li>
+                        <li>Puntualidad</li>
+                        <li>Competitividad</li>
+                        <li>Trabajo en Equipo</li>
+                        <li>Satisfacción al Cliente</li>
+                        <li>Disponibilidad al Cambio</li>
+                        <li>Responsabilidad Social</li>
+                    </ul>
+                </div>
+            </div> 
+            <div class="col-4 misiones-visiones">
+                <div class="mision">
+                    <h1>Misión <span>2020</span></h1>
+                    <h4>“Ser lider en tecnologia y soluciones de impresion satisfaciendo las necesidades de nuestros clientes a nivel nacional.”</h4>
+                </div>
+                <div class="vision">
+                    <h1>Visión <span>2020</span></h1>
+                    <h4>“Ser referentes en materia de impresión nacional e internacional ofreciendo vanguardia tecnológica, seguridad y servicio. Ser innovadores para cualquier reto y estar en constante evolución.”</h4>
+                </div>
+            </div> 
+            <div class="col-4 imagen-quienes-somos">
+                <%= image_tag "index/copiadora.jpg"%>
+            </div>
+        </div>
+    </div>
+    <div class="servicios-fixsell">
+        <div class="row titulo-servicio">
+            <div class="col-8 titulo-columna-servicio">
+                <h1>Servicios</h1>
+            </div>
+        </div>
+        <div class="row servicios align-items-center">
+            <div class="col-3 service-col">
+                <div class="service-card">
+                    <div  class= "image-icon"><%= image_tag "index/tech.svg"%></div>
+                    <div><h2 class="card-title">Tecnología</h2></div>
+                    <div><p>Alta calidad e innovacion</p></div>
+                </div>
+            </div>
+            <div class="col-3 service-col">
+                <div class="service-card">
+                    <div class= "image-icon"><%= image_tag "index/customer.svg"%></div>
+                    <div><h2 class="card-title">Servicio al Cliente</h2></div>
+                    <div><p>Hecho a la medida para tu empresa.</p></div>
+                </div>
+            </div>
+            <div class="col-3 service-col">
+                <div class="service-card">
+                    <div class="image-icon"><%= image_tag "index/tools.svg"%></div>
+                    <div class="card-title"><h2>Servicio Técnico</h2></div>
+                    <div><p>Certificado, rapido y eficiente.</p></div>
+                </div>
+            </div>
+            <div class="col-3 service-col">
+                <div class="service-card">
+                    <div class="image-icon"><%= image_tag "index/printer.svg"%></div>
+                    <div class="card-title"><h2>Maquinas</h2></div>
+                    <div><p>Produccion, oficina, artes graficas, etiquetas y ploteo.</p></div>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    
+    
         
 </div>
