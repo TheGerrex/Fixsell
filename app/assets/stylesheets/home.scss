@@ -243,6 +243,7 @@ p{
 }
 
 .clientes-fixsell {
+    margin-top: 25vh;
     padding: 5vh 5vw 5vh 5vw;
     
 }
@@ -251,7 +252,7 @@ p{
     padding: 0vh 5vw 5vh 5vw;
     img {
         
-        transition: opacity .5s ease-in;
+        transition: opacity .2s ease-in;
         width: 150px;
         height: auto;
     }
