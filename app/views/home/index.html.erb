@@ -12,7 +12,13 @@
               <a class="nav-link" href="#">Servicios de Impresión</a>
             </li>
             <li class="nav-item pl-5">
+                <a class="nav-link" href="#">Servicio Técnico</a>
+              </li>
+            <li class="nav-item pl-5">
                 <a class="nav-link" href="#">Tienda en Linea</a>
+            </li>
+            <li class="nav-item pl-5">
+                <a class="nav-link" href="#">Promociones</a>
             </li>
             <li class="nav-item pl-5">
                 <a class="nav-link" href="#">Acerca de Nosotros</a>
@@ -49,8 +55,8 @@
             </div>
         </div>
         <div class="col-3">
-            <div class="card-category hvr-buzz" id="promociones">
-                Promociones
+            <div class="card-category hvr-bounce-to-bottom" id="tecnico">
+                Servicio Técnico
             </div>
         </div>
     </div>
@@ -83,57 +89,36 @@
             <%= image_tag "index/logo-vitro.svg"%>           
         </div>
     </div>
-    <div class="acerca-de-nosotros">
-        <div class="row titulo">
-            <div class="col-8 titulo-columna">
-                <h1>Acerca de nosotros</h1>
-            </div>
-        </div>
-    
-        <div class="row contenido">
-            <div class="col-4 valores">
-                <div>
-                    <h1>Valores</h1>
-                    <ul>
-                        <li>Responsabilidad</li>
-                        <li>Integridad</li>
-                        <li>Honestidad</li>
-                        <li>Compromiso</li>
-                        <li>Calidad</li>
-                        <li>Profesionalidad</li>
-                        <li>Empatia</li>
-                        <li>Puntualidad</li>
-                        <li>Competitividad</li>
-                        <li>Trabajo en Equipo</li>
-                        <li>Satisfacción al Cliente</li>
-                        <li>Disponibilidad al Cambio</li>
-                        <li>Responsabilidad Social</li>
-                    </ul>
-                </div>
-            </div> 
-            <div class="col-4 misiones-visiones">
-                <div class="mision">
-                    <h1>Misión <span>2020</span></h1>
-                    <h4>“Ser lider en tecnologia y soluciones de impresion satisfaciendo las necesidades de nuestros clientes a nivel nacional.”</h4>
-                </div>
-                <div class="vision">
-                    <h1>Visión <span>2020</span></h1>
-                    <h4>“Ser referentes en materia de impresión nacional e internacional ofreciendo vanguardia tecnológica, seguridad y servicio. Ser innovadores para cualquier reto y estar en constante evolución.”</h4>
-                </div>
-            </div> 
-            <div class="col-4 imagen-quienes-somos">
-                <%= image_tag "index/copiadora.jpg"%>
-            </div>
-        </div>
-    </div>
     <div class="servicios-fixsell">
         <div class="row titulo-servicio">
             <div class="col-8 titulo-columna-servicio">
-                <h1>Servicios</h1>
+                <h1>Servicio Técnico</h1>
             </div>
         </div>
-        <div class="row servicios align-items-center">
-            <div class="col-3 service-col">
+        <div class="row servicios">
+            <div class="col-6 tecnico-texto">
+                <h2>¿Necesitas soporte técnico? Nuestro equipo está listo para ayudarle.</h2>
+                <p>
+                    El equipo de atención al cliente tiene su sede aquí en México, 
+                    y nuestro equipo está disponible para ayudar con cualquier consulta sobre productos y software, 
+                    como por ejemplo cómo habilitar funciones u otras preguntas relacionadas con la asistencia. 
+                    Ofrecemos a nuestros valiosos clientes una amplia gama de servicios de soporte con énfasis en 
+                    la resolución de su problema en el primer contacto.
+                </p>
+                <br>
+                <h2>Certicación Técnica Outward</h2>
+                <p>
+                    Es el Programa de Certificación Técnica de Konica Minolta, que es un programa técnico en todo el mundo dirigida a nuestros técnicos de campo y personal de apoyo, nuestras filiales y socios de canal,
+                    incluyendo distribuidores, subdistribuidores y proveedores de servicios autorizados.
+                </p>
+                <br>
+                <h2>¿Como podemos ayudar?</h2>
+                <p>Contactenos al <strong>81-14-44-94</strong> o mandanos un <a href="">mail</a></p>
+            </div>
+            <div class="col-6 align-self-center">
+                <%= image_tag "index/konica-minolta-award.jpg"%>
+            </div>
+            <!-- <div class="col-3 service-col">
                 <div class="service-card">
                     <div  class= "image-icon"><%= image_tag "index/tech.svg"%></div>
                     <div><h2 class="card-title">Tecnología</h2></div>
@@ -160,9 +145,67 @@
                     <div class="card-title"><h2>Maquinas</h2></div>
                     <div><p>Produccion, oficina, artes graficas, etiquetas y ploteo.</p></div>
                 </div>
+            </div> -->
+        </div>
+    </div>
+    <div class="acerca-de-nosotros">
+        <div class="row titulo">
+            <div class="col-8 titulo-columna">
+                <h1>Acerca de nosotros</h1>
+            </div>
+        </div>
+    
+        <div class="row contenido">
+            <div class="col-3 valores">
+                <div>
+                    <h1>Valores</h1>
+                    <ul>
+                        <li>Responsabilidad</li>
+                        <li>Integridad</li>
+                        <li>Compromiso</li>
+                        <li>Calidad</li>
+                        <li>Profesionalidad</li>
+                        <li>Empatia</li>
+                        <li>Puntualidad</li>
+                        <li>Competitividad</li>
+                    </ul>
+                </div>
+            </div> 
+            <div class="col-4 misiones-visiones">
+                <div class="mision">
+                    <h1>Misión <span>2020</span></h1>
+                    <h4>“Ser lider en tecnologia y soluciones de impresion satisfaciendo las necesidades de nuestros clientes a nivel nacional.”</h4>
+                </div>
+                <div class="vision">
+                    <h1>Visión <span>2020</span></h1>
+                    <h4>“Ser referentes en materia de impresión nacional e internacional ofreciendo vanguardia tecnológica, seguridad y servicio. Ser innovadores para cualquier reto y estar en constante evolución.”</h4>
+                </div>
+            </div> 
+            <div class="col-5 imagen-quienes-somos">
+                <%= image_tag "index/copiadora.jpg"%>
             </div>
         </div>
     </div>
+    <div class="contacto">
+        <div class="bigwrappersection">
+            <div class="wrappersection">
+                <div class="text-contacto">
+                    <h1 class="contacto-title">Contacto</h1>
+                    <p>
+                        <strong>Dirección:</strong> <br>
+                        Platón Sánchez #721 <br> Colonia Centro <br>
+                        Monterrey, Nuevo León
+                    </p>
+                </div>
+                <div class="representante">
+                    <h2>Selene Rodriguez</h2>
+                    <p>contacto@fixsellnorte.com</p>
+                </div>
+            </div>
+
+        </div>
+    </div>
+    
     
     
     
