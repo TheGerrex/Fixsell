@@ -304,7 +304,7 @@ p{
                 }
             }
             .vision {
-                padding-top: 10vh;
+                margin-top: 3vh;
                 span {
                     color: #781F41;
                 }
@@ -424,65 +424,56 @@ p{
     // }
 }
 
-
-.titulo-contacto {
-    padding-top: 5vh;
-    padding-left: 5vw;
-    .titulo-columna-contacto {
-        padding: 5vh 0vw 5vh 0vw;
-        h1 {
-            text-align: center;
-            font-size: 4em;
-            color: black;
-        }
-    }
+.footer-distributed {
+    background-color: white;
+    box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.12);
+    box-sizing: border-box;
+    width: 100%;
+    text-align: left;
+    font: bold 16px sans-serif;
+    padding: 55px 50px;
     
-}
-.contacto {
-    display: flex;
-    height: auto;
-    -webkit-box-pack: center;
+    .wrapper {
+        display: flex;
     justify-content: center;
-
-    .bigwrappersection {
-        display: flex;
-        max-width: 80%;
-        -webkit-box-orient: vertical;
-        -webkit-box-direction: normal;
-        flex-direction: column;
-        -webkit-box-pack: center;
-        justify-content: center;
-        -webkit-box-flex: 1;
-        flex: 1;
+        padding-left: 5vw;
+        padding-right: 5vw;
+    }
     
-        .wrappersection {
-        display: flex;
-        width: 100%;
-        height: auto;
-        margin-top: 60px;
-        margin-bottom: 60px;
-        -webkit-box-orient: horizontal;
-        -webkit-box-direction: normal;
-        flex-direction: row;
-        -webkit-box-pack: start;
-        padding: 0px 30px;
-        align-self: flex-start;
-        justify-content: flex-start;
-        flex-wrap: nowrap;
-        -webkit-box-align: center;
-        align-items: center;
-        flex: 0 auto;
 
-        .text-contacto {
-            .contacto-title {
-            font-size: 4em;
-            color: black;
+    .footer-left {
+
+        .footer-links {
+            display: flex;
+            flex-direction: column;
+            a {
+                color: #781F41;
             }
-            p {
-                font-size: 1.5em;
-            }
-        }
+            
         }
     }
+
+    .footer-center {
+        span {
+            font-weight: 400;
+        }
+        .direccion {
+            display: flex;
+            flex-direction: column;
+        }
+    }
+
+    .footer-right {
+        
+    }
+
+    .footer-company-name {
+        
+    }
 }
+
+// footer {
+//     position: fixed;
+//     bottom: 0;
+// }
 
