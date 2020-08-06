@@ -431,11 +431,11 @@ p{
     width: 100%;
     text-align: left;
     font: bold 16px sans-serif;
-    padding: 55px 50px;
+    padding: 5vh 5vw 0vh 5vw;
     
     .wrapper {
         display: flex;
-    justify-content: center;
+    // justify-content: center;
         padding-left: 5vw;
         padding-right: 5vw;
     }
@@ -454,17 +454,39 @@ p{
     }
 
     .footer-center {
+        
+        display: flex;
+        flex-direction: column;
+        flex-wrap: nowrap;
         span {
             font-weight: 400;
         }
-        .direccion {
+        .footer-icon-card {
             display: flex;
-            flex-direction: column;
-        }
+            flex-direction: row;
+            align-items: center;
+            margin-bottom: 20px;
+            .location {
+                font-size: 32px;
+            }
+            i {
+                font-size: 24px;
+                padding-right: 30px;
+            }
+
+            a {
+                color: #781F41;
+            }
+        }   
     }
 
     .footer-right {
-        
+        text-align: right;
+        i {
+            color: #781F41;
+            font-size: 1.5em;
+            padding: 20px;
+        }
     }
 
     .footer-company-name {
