@@ -1,4 +1,4 @@
-
+import  "../layouts/application.css";
 
 
 // This file is automatically compiled by Webpack, along with any other files
