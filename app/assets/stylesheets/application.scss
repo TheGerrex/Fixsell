@@ -1,6 +1,9 @@
 //= require_tree
 
- @import "bootstrap/scss/bootstrap";
+@import "bootstrap/scss/bootstrap";
+@import "tailwindcss/base";
+@import "tailwindcss/components";
+@import "tailwindcss/utilities";
 
 .nav-link {
     font-family: 'Roboto', sans-serif;
