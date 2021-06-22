@@ -23,7 +23,10 @@ default: &default
 
 development:
   <<: *default
-  database: Fixsell_development
+  database: fixsell
+  username: thegerrex
+  password: 1223
+  host: localhost
 
   # The specified database role being used to connect to postgres.
   # To create additional roles in postgres see `$ createuser --help`.
