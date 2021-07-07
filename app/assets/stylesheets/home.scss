@@ -13,29 +13,40 @@
 }
 
 .home-banner {
-    position: relative;
-    width: 100%;
-    height: 550px;
+    
+    width: 100% ;
+    height: auto;
+   
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
     .llamada-accion {
+        display: flex;
+        flex-direction: column;
         position: absolute;
-        top: 40%;
-        left: 0%;
-        background-color:#fff;
-        padding-top: 2vh;
-        padding-bottom: 2vh;
-        padding-left: 1vw;
-        padding-right: 1vw;
-        border-radius:2px;
+        bottom: 25%;
+        left: 5%;
+        background-color: white;
+        opacity: 0.9;
+        justify-content: center;
+        align-items: center;
+        text-align: left;
+        padding: 30px;
+        border-radius:10px;
+        width: 90%;
+        height: auto;
+        box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px, rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
+       
         .banner-titulo {
-           
-            font-size: 4rem;
+            font-size: 3rem;
+            font-weight: 900;
            
         }
     
         .sub-titulo {
             color: gray;
-            font-size: 1.5rem;
-            font-weight: 400;
+            font-size: 1rem;
+            font-weight: 500;
         }
     }
     
@@ -47,7 +58,7 @@
 
     .video-home {
         width: 100%;
-        max-height: 100%;
+        height: 70vh;
         object-fit: cover;
     }
     // .main-img-banner {
@@ -183,16 +194,21 @@ animation-iteration-count: infinite;
 }
 
 .presentacion {
-height: 500px;
+height: auto;
 object-fit: contain;
 display: flex;
 padding-top: 8vh;
+width: 100%;
 
 .imagen-presentacion {
-    position: relative;
+    
+    
+    .wrapper {
+        position: relative;
+    }
 
     img {
-    position: absolute;
+    
     z-index: -1;
     width: 100%;
     height: auto;
@@ -226,8 +242,7 @@ padding-top: 8vh;
 }
     
 .texto-presentacion {
-padding-top: 3vh;
-padding-right: 5vw;
+padding: 5vh;
 h1 {
     font-size: 3em;
 }
@@ -243,35 +258,42 @@ p{
 }
 
 .clientes-fixsell {
-    margin-top: 25vh;
-    padding: 5vh 5vw 5vh 5vw;
+    width: 100%;
+    padding-bottom: 0vh;
+    img {
+        width: 20px;
+    }
     
 }
 
 .clientes {
-    padding: 0vh 5vw 5vh 5vw;
+    padding: 0vh 5px 0vh 5px;
+    background-color: #172a3a;
+    width: 100%;
+    margin: 0 !important;
     img {
         
         transition: opacity .2s ease-in;
-        width: 150px;
+        max-width: 150px;
         height: auto;
     }
 
     #semex {
-        width: 50px;
+        max-width: 50px;
         height: auto;
     }
 
     img:hover {
-        opacity: .6;
+        opacity: .8;
     }
 }
 
 .titulo-clientes {
     padding: 5vh 5vw 5vh 5vw;
     h4{
-        color: #748386;
+        color: #fff;
         text-align: center;
+        font-size: 18px;
     }
     
 }
@@ -494,8 +516,77 @@ p{
     }
 }
 
-// footer {
-//     position: fixed;
-//     bottom: 0;
-// }
 
+// Small devices (landscape phones, 576px and up)
+@media (min-width: 576px) { 
+    .banner-titulo {
+           
+        font-size: 1rem;
+       
+    }
+
+    .sub-titulo {
+        color: gray;
+        font-size: .5rem;
+        font-weight: 400;
+    }
+}
+
+// Medium devices (tablets, 768px and up)
+@media (min-width: 768px) { 
+    .banner-titulo {
+           
+        font-size: 2rem;
+        
+       
+    }
+
+    .sub-titulo {
+        
+        font-size: 1rem;
+        
+        
+    }
+    .clientes {
+        
+        img {
+            
+            transition: opacity .2s ease-in;
+            width: 100px;
+            height: auto;
+        }
+    
+    }
+    
+    
+}
+
+// Large devices (desktops, 992px and up)
+@media (min-width: 992px) { 
+    .banner-titulo {
+           
+        font-size: 3rem;
+       
+    }
+
+    .sub-titulo {
+        color: gray;
+        font-size: 1rem;
+        font-weight: 400;
+    }
+}
+
+// Extra large devices (large desktops, 1200px and up)
+@media (min-width: 1200px) { 
+    .banner-titulo {
+           
+        font-size: 4rem;
+       
+    }
+
+    .sub-titulo {
+        color: gray;
+        font-size: 1.5rem;
+        font-weight: 400;
+    }
+}

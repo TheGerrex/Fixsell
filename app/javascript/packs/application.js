@@ -9,6 +9,12 @@ require("@rails/ujs").start()
 require("turbolinks").start()
 require("@rails/activestorage").start()
 require("channels")
+var $ = require( "jquery" )
+require("slick-carousel")
+
+import "slick-carousel/slick/slick.scss"
+import "slick-carousel/slick/slick-theme.scss"
+import "../styles/application.scss"
 
 
 // Uncomment to copy all static images under ../images to the output folder and reference

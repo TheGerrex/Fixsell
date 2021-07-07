@@ -1,9 +1,14 @@
 //= require_tree
 
 @import "bootstrap/scss/bootstrap";
-.nav-link {
+@import 'slick';
+@import 'slick-theme';
+h1, h2, h3, h4, h5, h6, p, a {
     font-family: 'Roboto', sans-serif;
-    font-weight: 500;
+}
+.nav-link {
+  
+  font-weight: 500;
 }
 
 $theme-colors: (

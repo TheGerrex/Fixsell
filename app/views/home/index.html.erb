@@ -1,3 +1,4 @@
+
 <div class="container-fluid no-padding">
     <nav class="navbar navbar-expand-lg navbar-light bg-light">
         <a class="navbar-brand" href="#">
@@ -30,15 +31,32 @@
         </div>
     </nav>
     <div class="home-banner">
+        <%= video_tag "konica.mp4", :autoplay => true, :loop => true, :muted => true, class: "video-home" %>
         <div class="llamada-accion">
             <h1 class="banner-titulo">Control, seguridad y ahorro.</h1>
             <h2 class="sub-titulo">Empresa dedicada a el mercado de la impresión en el ambito profesional y corporativo.</h2>
+            
         </div>
-        
-        
-        <%= video_tag "konica.mp4", :autoplay => true, :loop => true, :muted => true, class: "video-home" %>
     </div>
-    <div class="row categorias">
+    <div class="clientes-fixsell">
+        <div class="row clientes align-items-center"> 
+            <div class="col-12 titulo-clientes ">
+                <h4>Confiado por empresas con visión a futuro</h4>
+            </div>
+            <div class="col-12">
+                <div class="row justify-content-between align-content-center">
+                <%= image_tag "index/lg.svg"%>
+                <%= image_tag "index/logo-risoul.svg"%>
+                <%= image_tag "index/logo-semex.svg", id: "semex"%>
+                <%= image_tag "index/logo-tecmilenio.svg"%>
+                <%= image_tag "index/logo-thomasbetts.svg"%>
+                <%= image_tag "index/logo-vitro.svg"%>
+                </div>
+            </div>              
+        </div>
+    </div>
+   
+    <%# <div class="row categorias">
         <div class="col-12 col-md-6 col-lg-3">
             <div class="card-category hvr-bounce-to-bottom" id="consumibles">
                 Consumibles
@@ -59,189 +77,188 @@
                 Servicio Técnico
             </div>
         </div>
-    </div>
+    </div> %>
 
-    <div class="row presentacion">
-        <div class="col-8 imagen-presentacion">
-            <%= image_tag "index/konica_minolta_c2060.jpg" %>
-            <div class="product-card">
-                <%= image_tag "index/bizhub-1060-logo.svg" %>
-            </div>
-        </div>
-        <div class="col-4 texto-presentacion">
-            <h1><span>29 años de experiencia</span> en el mercado de fotocopiado e impresión.</h1>
-            <hr>
-            <p>Como proveedor de productos lideres relacionados con la información de la imagen, nos consideramos como su socio competente para su negocio.</p>
-        </div>
-    </div>
-    <div class="clientes-fixsell">
-        <div class="row titulo-clientes">
-            <div class="col-12">
-                <h4>Confiado por empresas con visión a futuro</h4>
-            </div>
-        </div>
-        <div class="row clientes justify-content-between"> 
-            <%= image_tag "index/lg.svg"%>
-            <%= image_tag "index/logo-risoul.svg"%>
-            <%= image_tag "index/logo-semex.svg", id: "semex"%>
-            <%= image_tag "index/logo-tecmilenio.svg"%>
-            <%= image_tag "index/logo-thomasbetts.svg"%>
-            <%= image_tag "index/logo-vitro.svg"%>           
-        </div>
-    </div>
-    <div class="servicios-fixsell">
-        <div class="row titulo-servicio">
-            <div class="col-6 titulo-columna-servicio">
-                <h1>Servicio Técnico</h1>
-            </div>
-        </div>
-        <div class="row servicios">
-            <div class="col-6 tecnico-texto">
-                <h2>¿Necesitas soporte técnico? Nuestro equipo está listo para ayudarle.</h2>
-                <p>
-                    El equipo de atención al cliente tiene su sede aquí en México, 
-                    y nuestro equipo está disponible para ayudar con cualquier consulta sobre productos y software, 
-                    como por ejemplo cómo habilitar funciones u otras preguntas relacionadas con la asistencia. 
-                    Ofrecemos a nuestros valiosos clientes una amplia gama de servicios de soporte con énfasis en 
-                    la resolución de su problema en el primer contacto.
-                </p>
-                <br>
-                <h2>Certicación Técnica Outward</h2>
-                <p>
-                    Es el Programa de Certificación Técnica de Konica Minolta, que es un programa técnico en todo el mundo dirigida a nuestros técnicos de campo y personal de apoyo, nuestras filiales y socios de canal,
-                    incluyendo distribuidores, subdistribuidores y proveedores de servicios autorizados.
-                </p>
-                <br>
-                <h2>¿Como podemos ayudar?</h2>
-                <p>Contactenos al <strong>81-14-44-94</strong> o mandanos un <a href="">mail</a></p>
-            </div>
-            <div class="col-6 align-self-center">
-                <%= image_tag "index/konica-minolta-award.jpg"%>
-            </div>
-            <!-- <div class="col-3 service-col">
-                <div class="service-card">
-                    <div  class= "image-icon"><%= image_tag "index/tech.svg"%></div>
-                    <div><h2 class="card-title">Tecnología</h2></div>
-                    <div><p>Alta calidad e innovacion</p></div>
-                </div>
-            </div>
-            <div class="col-3 service-col">
-                <div class="service-card">
-                    <div class= "image-icon"><%= image_tag "index/customer.svg"%></div>
-                    <div><h2 class="card-title">Servicio al Cliente</h2></div>
-                    <div><p>Hecho a la medida para tu empresa.</p></div>
-                </div>
-            </div>
-            <div class="col-3 service-col">
-                <div class="service-card">
-                    <div class="image-icon"><%= image_tag "index/tools.svg"%></div>
-                    <div class="card-title"><h2>Servicio Técnico</h2></div>
-                    <div><p>Certificado, rapido y eficiente.</p></div>
-                </div>
-            </div>
-            <div class="col-3 service-col">
-                <div class="service-card">
-                    <div class="image-icon"><%= image_tag "index/printer.svg"%></div>
-                    <div class="card-title"><h2>Maquinas</h2></div>
-                    <div><p>Produccion, oficina, artes graficas, etiquetas y ploteo.</p></div>
-                </div>
-            </div> -->
-        </div>
-    </div>
-    <div class="acerca-de-nosotros">
-        <div class="row titulo">
-            <div class="col-6 titulo-columna">
-                <h1>Acerca de nosotros</h1>
-            </div>
-        </div>
     
-        <div class="row contenido">
-            <div class="col-3 valores">
-                <div>
-                    <h1>Valores</h1>
-                    <ul>
-                        <li>Responsabilidad</li>
-                        <li>Integridad</li>
-                        <li>Compromiso</li>
-                        <li>Calidad</li>
-                        <li>Profesionalidad</li>
-                        <li>Empatia</li>
-                        <li>Puntualidad</li>
-                        <li>Competitividad</li>
-                    </ul>
+        <div class="row presentacion">
+            <div class="col-12 col-md-8 imagen-presentacion">
+                <div class="wrapper">
+                    <%= image_tag "index/konica_minolta_c2060.jpg" %>
+                    <div class="product-card">
+                        <%= image_tag "index/bizhub-1060-logo.svg" %>
+                    </div>
                 </div>
-            </div> 
-            <div class="col-6 misiones-visiones">
-                <div class="mision">
-                    <h1>Misión <span>2020</span></h1>
-                    <h4>“Ser lider en tecnologia y soluciones de impresion satisfaciendo las necesidades de nuestros clientes a nivel nacional.”</h4>
-                </div>
-                <div class="vision">
-                    <h1>Visión <span>2020</span></h1>
-                    <h4>“Ser referentes en materia de impresión nacional e internacional ofreciendo vanguardia tecnológica, seguridad y servicio. Ser innovadores para cualquier reto y estar en constante evolución.”</h4>
-                </div>
-            </div> 
-            <div class="col-3 imagen-quienes-somos">
-                <%= image_tag "index/copiadora.jpg"%>
+            </div>
+            <div class="col-12 col-md-4 texto-presentacion">
+                <h1><span>29 años de experiencia</span> en el mercado de fotocopiado e impresión.</h1>
+                <hr>
+                <p>Como proveedor de productos lideres relacionados con la información de la imagen, nos consideramos como su socio competente para su negocio.</p>
             </div>
         </div>
-    </div>
-    
-        <footer class="footer-distributed">
-            <div class="row wrapper">
-                <div class="row" style="width: 100%; margin-left: 1px;">
-                    <%= image_tag "index/logo-fixsell-grande.svg", size:"250x100", alt:"logo" %>
+        
+        <div class="servicios-fixsell">
+            <div class="row titulo-servicio">
+                <div class="col-6 titulo-columna-servicio">
+                    <h1>Servicio Técnico</h1>
                 </div>
-                <div class="row align-items-center" style="width: 100%;">
-                   
+            </div>
+            <div class="row servicios">
+                <div class="col-6 tecnico-texto">
+                    <h2>¿Necesitas soporte técnico? Nuestro equipo está listo para ayudarle.</h2>
+                    <p>
+                        El equipo de atención al cliente tiene su sede aquí en México, 
+                        y nuestro equipo está disponible para ayudar con cualquier consulta sobre productos y software, 
+                        como por ejemplo cómo habilitar funciones u otras preguntas relacionadas con la asistencia. 
+                        Ofrecemos a nuestros valiosos clientes una amplia gama de servicios de soporte con énfasis en 
+                        la resolución de su problema en el primer contacto.
+                    </p>
+                    <br>
+                    <h2>Certicación Técnica Outward</h2>
+                    <p>
+                        Es el Programa de Certificación Técnica de Konica Minolta, que es un programa técnico en todo el mundo dirigida a nuestros técnicos de campo y personal de apoyo, nuestras filiales y socios de canal,
+                        incluyendo distribuidores, subdistribuidores y proveedores de servicios autorizados.
+                    </p>
+                    <br>
+                    <h2>¿Como podemos ayudar?</h2>
+                    <p>Contactenos al <strong>81-14-44-94</strong> o mandanos un <a href="">mail</a></p>
+                </div>
+                <div class="col-6 align-self-center">
+                    <%= image_tag "index/konica-minolta-award.jpg"%>
+                </div>
+                <!-- <div class="col-3 service-col">
+                    <div class="service-card">
+                        <div  class= "image-icon"><%= image_tag "index/tech.svg"%></div>
+                        <div><h2 class="card-title">Tecnología</h2></div>
+                        <div><p>Alta calidad e innovacion</p></div>
+                    </div>
+                </div>
+                <div class="col-3 service-col">
+                    <div class="service-card">
+                        <div class= "image-icon"><%= image_tag "index/customer.svg"%></div>
+                        <div><h2 class="card-title">Servicio al Cliente</h2></div>
+                        <div><p>Hecho a la medida para tu empresa.</p></div>
+                    </div>
+                </div>
+                <div class="col-3 service-col">
+                    <div class="service-card">
+                        <div class="image-icon"><%= image_tag "index/tools.svg"%></div>
+                        <div class="card-title"><h2>Servicio Técnico</h2></div>
+                        <div><p>Certificado, rapido y eficiente.</p></div>
+                    </div>
+                </div>
+                <div class="col-3 service-col">
+                    <div class="service-card">
+                        <div class="image-icon"><%= image_tag "index/printer.svg"%></div>
+                        <div class="card-title"><h2>Maquinas</h2></div>
+                        <div><p>Produccion, oficina, artes graficas, etiquetas y ploteo.</p></div>
+                    </div>
+                </div> -->
+            </div>
+        </div>
+        <div class="acerca-de-nosotros">
+            <div class="row titulo">
+                <div class="col-6 titulo-columna">
+                    <h1>Acerca de nosotros</h1>
+                </div>
+            </div>
+        
+            <div class="row contenido">
+                <div class="col-12 col-md-3 valores">
+                    <div>
+                        <h1>Valores</h1>
+                        <ul>
+                            <li>Responsabilidad</li>
+                            <li>Integridad</li>
+                            <li>Compromiso</li>
+                            <li>Calidad</li>
+                            <li>Profesionalidad</li>
+                            <li>Empatia</li>
+                            <li>Puntualidad</li>
+                            <li>Competitividad</li>
+                        </ul>
+                    </div>
+                </div> 
+                <div class="col-12 col-md-6 misiones-visiones">
+                    <div class="mision">
+                        <h1>Misión <span>2020</span></h1>
+                        <h4>“Ser lider en tecnologia y soluciones de impresion satisfaciendo las necesidades de nuestros clientes a nivel nacional.”</h4>
+                    </div>
+                    <div class="vision">
+                        <h1>Visión <span>2020</span></h1>
+                        <h4>“Ser referentes en materia de impresión nacional e internacional ofreciendo vanguardia tecnológica, seguridad y servicio. Ser innovadores para cualquier reto y estar en constante evolución.”</h4>
+                    </div>
+                </div> 
+                <div class="col-12 col-md-3 imagen-quienes-somos">
+                    <%= image_tag "index/copiadora.jpg"%>
+                </div>
+            </div>
+        </div>
+
+    
+    <footer class="footer-distributed">
+        <div class="row wrapper">
+            <div class="row" style="width: 100%; margin-left: 1px;">
+                <%= image_tag "index/logo-fixsell-grande.svg", size:"250x100", alt:"logo" %>
+            </div>
+            <div class="row align-items-center" style="width: 100%;">
                 
-                    <div class="col-4 footer-left">
-                        
-                        
-                        <div class="footer-links">
-                            <a href="#">Index</a>
-                            <a href="#">Servicios de Impresión</a>
-                            <a href="#">Servicio Técnico</a>
-                            <a href="#">Tienda en Linea</a>
-                            <a href="#">Promociones</a>
-                            <a href="#">Acerca de Nosotros</a>
-                            <a href="#">Contacto</a>
-                        </div>
+            
+                <div class="col-4 footer-left">
+                    
+                    
+                    <div class="footer-links">
+                        <a href="#">Index</a>
+                        <a href="#">Servicios de Impresión</a>
+                        <a href="#">Servicio Técnico</a>
+                        <a href="#">Tienda en Linea</a>
+                        <a href="#">Promociones</a>
+                        <a href="#">Acerca de Nosotros</a>
+                        <a href="#">Contacto</a>
+                    </div>
+                </div>
+
+                <div class="col-4 footer-center">
+                    <div class="footer-icon-card">
+                        <div><i class="fa fa-map-marker location"></i></div>
+                        <div><span>Platón Sánchez #721 Colonia Centro</span> Monterrey, Mexico</div>
                     </div>
 
-                    <div class="col-4 footer-center">
-                        <div class="footer-icon-card">
-                            <div><i class="fa fa-map-marker location"></i></div>
-                            <div><span>Platón Sánchez #721 Colonia Centro</span> Monterrey, Mexico</div>
-                        </div>
-
-                        <div class="footer-icon-card">
-                            <div><i class="fa fa-phone"></i></div>
-                            <div>(81)8114-3827 / (81)8114-4494</div>
-                        </div>
-
-                        <div class="footer-icon-card">
-                            <div><i class="fa fa-envelope"></i></div>
-                            <div><a href="">contacto@fixsell.mx</a></div>
-                        </div>
+                    <div class="footer-icon-card">
+                        <div><i class="fa fa-phone"></i></div>
+                        <div>(81)8114-3827 / (81)8114-4494</div>
                     </div>
 
-                    <div class="col-4 footer-right">
-                        <p class="footer-company-about">
-                            Fixsell del Norte es una compañia dedicada a el mercado de la impresión en el ambito profesional y corporativo.
-                        </p>
+                    <div class="footer-icon-card">
+                        <div><i class="fa fa-envelope"></i></div>
+                        <div><a href="">contacto@fixsell.mx</a></div>
+                    </div>
+                </div>
 
-                        <div class="footer-icons">
-                            <a href="#"><i class="fa fa-facebook"></i></a>
-                            <a href="#"><i class="fa fa-twitter"></i></a>
-                            <a href="#"><i class="fa fa-linkedin"></i></a>
-                            <a href="#"><i class="fa fa-github"></i></a>
-                        </div>
+                <div class="col-4 footer-right">
+                    <p class="footer-company-about">
+                        Fixsell del Norte es una compañia dedicada a el mercado de la impresión en el ambito profesional y corporativo.
+                    </p>
+
+                    <div class="footer-icons">
+                        <a href="#"><i class="fa fa-facebook"></i></a>
+                        <a href="#"><i class="fa fa-twitter"></i></a>
+                        <a href="#"><i class="fa fa-linkedin"></i></a>
+                        <a href="#"><i class="fa fa-github"></i></a>
                     </div>
                 </div>
             </div>
-            <hr>
-            <div class="row align-items-center justify-content-center footer-company-name"><p>Fixsell del Norte &copy; 2020</p></div>
-		</footer>
-           
-</div>
+        </div>
+        <hr>
+        <div class="row align-items-center justify-content-center footer-company-name"><p>Fixsell del Norte &copy; 2020</p></div>
+    </footer>
+</div>            
+
+<script>
+    $(document).ready(function(){
+        $('.multiple-items').slick({
+  infinite: true,
+  slidesToShow: 3,
+  slidesToScroll: 3
+});
+    });
+    </script>
